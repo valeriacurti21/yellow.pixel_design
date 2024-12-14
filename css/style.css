@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+h1, h2, p, ul {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Landing Page */
+#start-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.start-text {
+    font-size: 24px;
+}
+
+/* Navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #000;
+    color: white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+#navbar.active {
+    transform: translateX(0);
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.nav-links li {
+    margin: 20px 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    z-index: 1100;
+}
+
+/* Portfolio Content */
+header h1 {
+    font-size: 36px;
+    margin-top: 80px; /* Push content below navbar */
+}
+
+section {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Hover Effects */
+.nav-links li a:hover {
+    color: yellow;
+}
+
